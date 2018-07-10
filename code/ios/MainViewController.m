@@ -29,8 +29,7 @@ enum
 extern cvar_t *com_maxfps;
 
 static NSString * const kDemoArchiveURL =
-@"https://www.dropbox.com/s/r9ozo1t22io43dv/linuxq3ademo-1.11-6.x86.gz.sh?dl=1";
-//@"ftp://ftp.idsoftware.com/idstuff/quake3/linux/linuxq3ademo-1.11-6.x86.gz.sh";
+@"ftp://ftp.idsoftware.com/idstuff/quake3/linux/linuxq3ademo-1.11-6.x86.gz.sh";
 //    @"ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/gentoo/distfiles/linuxq3ademo-1.11-6.x86.gz.sh";
 static const long long kDemoArchiveOffset = 5468;
 static NSString * const kPakFileName = @"pak0.pk3";
