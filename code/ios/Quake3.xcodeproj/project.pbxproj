@@ -179,10 +179,15 @@
 		2C95BDEF178CB3A600BD1463 /* l_precomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C95BC03178C94D500BD1463 /* l_precomp.c */; };
 		2C95BDF0178CB3A600BD1463 /* l_script.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C95BC05178C94D500BD1463 /* l_script.c */; };
 		2C95BDF1178CB3A600BD1463 /* l_struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C95BC07178C94D500BD1463 /* l_struct.c */; };
+		5F745D4420F01D500023AA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F745D3F20F01D500023AA52 /* Main.storyboard */; };
+		5F745D4520F01D500023AA52 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F745D4020F01D500023AA52 /* MainViewController.m */; };
+		5F745D4620F01D500023AA52 /* Quake3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F745D4320F01D500023AA52 /* Quake3AppDelegate.m */; };
+		5F745D4720F01F7E0023AA52 /* snapvector.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C95BBC8178C94D500BD1463 /* snapvector.c */; };
+		5F745D4820F01F8E0023AA52 /* ftola.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C95BBC3178C94D400BD1463 /* ftola.c */; };
+		5F745D4C20F026530023AA52 /* missionpack in Resources */ = {isa = PBXBuildFile; fileRef = 5F745D4B20F026530023AA52 /* missionpack */; };
 		FD05A01913C1B8D70038165B /* ios_snddma.c in Sources */ = {isa = PBXBuildFile; fileRef = FD05A01813C1B8D70038165B /* ios_snddma.c */; };
 		FD05A0CD13C1CAAA0038165B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD05A0CC13C1CAAA0038165B /* AudioToolbox.framework */; };
 		FD1E69480E6FC951004A4AC6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1E69470E6FC951004A4AC6 /* Icon.png */; };
-		FD261F150ECC159B0022D939 /* Q3Application.m in Sources */ = {isa = PBXBuildFile; fileRef = FD261F0E0ECC15470022D939 /* Q3Application.m */; };
 		FD4BE740103D1BA100A9AC33 /* Q3Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4BE73F103D1BA100A9AC33 /* Q3Downloader.m */; };
 		FDBBE37E0E2ADFD400A186BC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBBE37D0E2ADFD400A186BC /* MainWindow.xib */; };
 		FDBBE4620E2AEF4500A186BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBBE4610E2AEF4500A186BC /* QuartzCore.framework */; };
@@ -711,6 +716,12 @@
 		2CB366FF177A0EFE000C041F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CB36701177A0EFE000C041F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CB36703177A0EFE000C041F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5F745D3F20F01D500023AA52 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5F745D4020F01D500023AA52 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5F745D4120F01D500023AA52 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5F745D4220F01D500023AA52 /* Quake3AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quake3AppDelegate.h; sourceTree = "<group>"; };
+		5F745D4320F01D500023AA52 /* Quake3AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quake3AppDelegate.m; sourceTree = "<group>"; };
+		5F745D4B20F026530023AA52 /* missionpack */ = {isa = PBXFileReference; lastKnownFileType = folder; path = missionpack; sourceTree = "<group>"; };
 		FD05A01813C1B8D70038165B /* ios_snddma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = ios_snddma.c; sourceTree = "<group>"; tabWidth = 4; };
 		FD05A0CC13C1CAAA0038165B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FD1E69470E6FC951004A4AC6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -836,6 +847,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5F745D4B20F026530023AA52 /* missionpack */,
 				2C1D87EA178F6D7300E3AE41 /* baseq3 */,
 				2C916232178CB9BA00D43561 /* banner.jpg */,
 				2C44373B178A168C00EEFDA6 /* Info.plist */,
@@ -1536,6 +1548,11 @@
 		FDD2542D0D80FE5300E13415 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				5F745D3F20F01D500023AA52 /* Main.storyboard */,
+				5F745D4120F01D500023AA52 /* MainViewController.h */,
+				5F745D4020F01D500023AA52 /* MainViewController.m */,
+				5F745D4220F01D500023AA52 /* Quake3AppDelegate.h */,
+				5F745D4320F01D500023AA52 /* Quake3AppDelegate.m */,
 				FDD254340D80FF5200E13415 /* ios_glimp.h */,
 				FDD254350D80FF5200E13415 /* ios_glimp.m */,
 				FDD254370D80FF5200E13415 /* ios_glsmp_null.c */,
@@ -1615,9 +1632,11 @@
 				FDEC0B0B1568D0CC0063201B /* Default~ipad.png in Resources */,
 				FDEC0B0C1568D0CC0063201B /* q3_enter.png in Resources */,
 				FDEC0B0D1568D0CC0063201B /* q3_escape.png in Resources */,
+				5F745D4420F01D500023AA52 /* Main.storyboard in Resources */,
 				FDEC0B0E1568D0CC0063201B /* q3a_new_control.png in Resources */,
 				FDEC0B0F1568D0CC0063201B /* Quake_III_Arena_Logo.png in Resources */,
 				2C7A7BA41767DA0000BEA13E /* Default@2x.png in Resources */,
+				5F745D4C20F026530023AA52 /* missionpack in Resources */,
 				2C7A7BAD1767E62E00BEA13E /* Default-568h@2x.png in Resources */,
 				2C916233178CB9BA00D43561 /* banner.jpg in Resources */,
 				2C1D87EB178F6D7300E3AE41 /* baseq3 in Resources */,
@@ -1733,6 +1752,7 @@
 				2C9161ED178CB85F00D43561 /* cl_input.c in Sources */,
 				2C9161EE178CB85F00D43561 /* cl_keys.c in Sources */,
 				2C9161EF178CB85F00D43561 /* cl_main.c in Sources */,
+				5F745D4820F01F8E0023AA52 /* ftola.c in Sources */,
 				2C9161F0178CB85F00D43561 /* cl_net_chan.c in Sources */,
 				2C9161F1178CB85F00D43561 /* cl_parse.c in Sources */,
 				2C9161F2178CB85F00D43561 /* cl_scrn.c in Sources */,
@@ -1757,6 +1777,7 @@
 				2C916205178CB8C000D43561 /* msg.c in Sources */,
 				2C916206178CB8C000D43561 /* net_chan.c in Sources */,
 				2C916207178CB8C000D43561 /* net_ip.c in Sources */,
+				5F745D4720F01F7E0023AA52 /* snapvector.c in Sources */,
 				2C916208178CB8C000D43561 /* unzip.c in Sources */,
 				2C916209178CB8C000D43561 /* vm.c in Sources */,
 				2C91620A178CB8C000D43561 /* vm_interpreted.c in Sources */,
@@ -1790,6 +1811,7 @@
 				2C91622C178CB94200D43561 /* sv_net_chan.c in Sources */,
 				2C91622E178CB94200D43561 /* sv_snapshot.c in Sources */,
 				2C91622F178CB94200D43561 /* sv_world.c in Sources */,
+				5F745D4520F01D500023AA52 /* MainViewController.m in Sources */,
 				2C916230178CB94B00D43561 /* q_math.c in Sources */,
 				2C916231178CB94B00D43561 /* q_shared.c in Sources */,
 				2C916234178CD5D500D43561 /* snd_codec.c in Sources */,
@@ -1811,7 +1833,7 @@
 				2C916246178CDB8300D43561 /* ioapi.c in Sources */,
 				2C916247178CDBEB00D43561 /* md5.c in Sources */,
 				2C916248178CDC0500D43561 /* snd_openal.c in Sources */,
-				FD261F150ECC159B0022D939 /* Q3Application.m in Sources */,
+				5F745D4620F01D500023AA52 /* Quake3AppDelegate.m in Sources */,
 				FD4BE740103D1BA100A9AC33 /* Q3Downloader.m in Sources */,
 				FD05A01913C1B8D70038165B /* ios_snddma.c in Sources */,
 				2C03759A17936B240004B110 /* cl_curl.c in Sources */,
@@ -1841,7 +1863,7 @@
 				);
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../libs/ios\"",
@@ -1870,7 +1892,7 @@
 				);
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../libs/ios\"",
@@ -1883,7 +1905,6 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1909,7 +1930,6 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1934,7 +1954,6 @@
 		FD38B52D11B20E8900A16F9D /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1975,7 +1994,7 @@
 				);
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../libs/ios\"",

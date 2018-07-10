@@ -8,8 +8,7 @@
 #import "ios_local.h"
 #import	<QuartzCore/QuartzCore.h>
 #import	<OpenGLES/ES1/glext.h>
-#import	<UIKit/UITouch.h>
-#import <UIKit/UIImageView.h>
+#import	<UIKit/UIKit.h>
 
 #include "../client/keycodes.h"
 #include "../renderergl1/tr_local.h"
@@ -208,6 +207,8 @@
 }
 
 - (void)awakeFromNib {
+	[super awakeFromNib];
+	
     int i;
     CGRect joypadCapFrame;
 
@@ -296,6 +297,7 @@
 
 - (void)layoutSubviews
 {
+	[super layoutSubviews];
 	CGSize boundsSize = self.bounds.size;
 
 	if (roundf(boundsSize.width) != _size.width || roundf(boundsSize.height) != _size.height)
@@ -358,12 +360,15 @@
 // handleDragFromPoint rotates the camera based on a touchedMoved event
 - (void)_handleDragFromPoint:(CGPoint)location toPoint:(CGPoint)previousLocation
 {
-	if (vidRotation == 90)
+//	if (vidRotation == 90)
 	{
 		CGSize mouseDelta;
 
-		mouseDelta.width = roundf((previousLocation.y - location.y) * _mouseScale.x);
-		mouseDelta.height = roundf((location.x - previousLocation.x) * _mouseScale.y);
+//		mouseDelta.width = roundf((previousLocation.y - location.y) * _mouseScale.x);
+//		mouseDelta.height = roundf((location.x - previousLocation.x) * _mouseScale.y);
+
+		mouseDelta.width = roundf((location.x - previousLocation.x) * _mouseScale.x);
+		mouseDelta.height = roundf((previousLocation.y - location.y) * _mouseScale.y);
 
 		CL_MouseEvent(mouseDelta.width, mouseDelta.height, Sys_Milliseconds(), qfalse);
 	}

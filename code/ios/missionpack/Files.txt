@@ -1,0 +1,4 @@
+This folder should contain .pk3 files from original Quake3 CD:
+pak1.pk3
+pak2.pk3
+pak3.pk3
