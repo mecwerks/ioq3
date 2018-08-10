@@ -1,0 +1,4 @@
+This folder should contain .pk3 files from Quake3 Demo (optional):
+pak0.pk3
+
+

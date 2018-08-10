@@ -10,7 +10,7 @@
 #include "ios_local.h"
 #include "../renderergl1/tr_local.h"
 
-#import	"Q3Application.h"
+#import	"Quake3AppDelegate.h"
 #import	"Q3ScreenView.h"
 
 #define MAX_ARRAY_SIZE		1024
@@ -227,34 +227,34 @@ GLimp_SetMode(float rotation)
 	UIView *superview = _screenView.superview;
 	CGRect superviewBounds = superview.bounds, frame;
 	
-	if (rotation == 0 || rotation == 180)
-	{
-		frame.size.width = superviewBounds.size.width;
-		frame.size.height = frame.size.width * (3 / 4.0);
-		frame.origin.x = superviewBounds.origin.x;
-		frame.origin.y = (superviewBounds.size.height - frame.size.height) / 2;
-	}
-	else
-		frame = superviewBounds;
+//	if (rotation == 0 || rotation == 180)
+//	{
+	frame.size.width = superviewBounds.size.height * 4.0 / 3.0;// superviewBounds.size.width;
+	frame.size.height = superviewBounds.size.height; //frame.size.width * (3 / 4.0);
+	frame.origin.x = (superviewBounds.size.width - frame.size.width) / 2;
+	frame.origin.y = superviewBounds.origin.y;//(superviewBounds.size.height - frame.size.height) / 2;
+//	}
+//	else
+//		frame = superviewBounds;
 	
 	_screenView.frame = frame;
 	
 	glConfig.isFullscreen = qtrue;
- 	if (rotation == 0 || rotation == 180)
- 	{
+// 	if (rotation == 0 || rotation == 180)
+// 	{
  		glConfig.vidWidth = frame.size.width;
  		glConfig.vidHeight = frame.size.height;
- 	}
- 	else
- 	{
-		glConfig.vidWidth = frame.size.height;
-		glConfig.vidHeight = frame.size.width;
- 	}
+// 	}
+// 	else
+// 	{
+//		glConfig.vidWidth = frame.size.height;
+//		glConfig.vidHeight = frame.size.width;
+// 	}
 	glConfig.windowAspect = (float)glConfig.vidWidth / glConfig.vidHeight;
 	glConfig.colorBits = [_screenView numColorBits];
 	glConfig.depthBits = [_screenView numDepthBits];
 	glConfig.stencilBits = 0;
-	vidRotation = rotation;
+	vidRotation = 0;//rotation;
 	
 	if (cls.uiStarted)
 	{
@@ -276,7 +276,7 @@ GLimp_SetMode(float rotation)
 void
 GLimp_Init(void)
 {
-	Q3Application *application = (Q3Application *)[Q3Application sharedApplication];
+	Quake3AppDelegate *application = (Quake3AppDelegate *)[UIApplication sharedApplication].delegate;
 
 	ri.Printf(PRINT_ALL, "Initializing OpenGL subsystem\n");
 
